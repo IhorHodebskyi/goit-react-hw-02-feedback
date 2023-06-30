@@ -1,1 +1,1 @@
-export const StatisticTitle = ({ title }) => <h3>{title}</h3>;
+export const StatisticTitle = ({ title }) => <h4>{title}</h4>;
