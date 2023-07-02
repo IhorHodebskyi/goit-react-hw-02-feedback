@@ -14,8 +14,7 @@ export class Statistic extends Component {
     this.setState(prevState => ({ good: prevState.good + 1 }));
   };
 
-  neutralIncrement = e => {
-    // console.log(e.target.value );
+  neutralIncrement = () => {
     this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
   };
 
