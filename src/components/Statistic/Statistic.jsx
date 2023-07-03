@@ -10,9 +10,8 @@ export class Statistic extends Component {
     bad: 0,
   };
 
-  handelIncrement = type => {
+  handelIncrement = type =>
     this.setState(prevState => ({ [type]: prevState[type] + 1 }));
-  };
 
   countTotalFeedback = () =>
     Object.values(this.state).reduce((acc, type) => acc + type, 0);
