@@ -1,14 +1,7 @@
-import { StatisticTitle } from "./StatisticTitle";
+import { Section } from './Section';
 
-export const StatisticSpan = ({
-  good,
-  neutral,
-  bad,
-  total = 0,
-  interest = 0,
-  title,
-}) => {
-  return total ? (
+export const Statistics = ({ good, neutral, bad, total = 0, interest = 0 }) =>
+  total ? (
     <ul>
       <li>
         <span>Good: {good}</span>
@@ -27,6 +20,5 @@ export const StatisticSpan = ({
       </li>
     </ul>
   ) : (
-    <StatisticTitle title="There is no feedback" />
+    <Section title="There is no feedback" />
   );
-};
